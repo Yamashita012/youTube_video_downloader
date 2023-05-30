@@ -47,5 +47,3 @@ Before running the code, make sure you have the following dependencies installed
 - Keep in mind any copyright restrictions and use this code responsibly.
 - Some videos may not be available for download due to restrictions imposed by the uploader or YouTube.
 
-## License
-This code is provided under the [MIT License](https://opensource.org/licenses/MIT).
