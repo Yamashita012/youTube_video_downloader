@@ -6,6 +6,7 @@ This code is a simple YouTube video downloader written in Python using the `pytu
 Before running the code, make sure you have the following dependencies installed:
 - `pytube`: You can install it using `pip install pytube`.
 - `tqdm`: You can install it using `pip install tqdm`.
+- `colorama`: You can install it using `pip install colorama`
 
 ## How to Use
 1. Run the Python script.
@@ -19,7 +20,7 @@ Before running the code, make sure you have the following dependencies installed
 1. Import the necessary libraries:
     - `pytube`: Used to interact with the YouTube video.
     - `tqdm`: Used to display the progress bar.
-
+    - `colorama`: Used to change color of the text
 2. Set the `total_length` variable to the desired number of iterations for the progress bar.
 
 3. Create a `tqdm` progress bar object with a total length equal to `total_length` and a unit of 'iteration'.
