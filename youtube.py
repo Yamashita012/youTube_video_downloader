@@ -1,18 +1,20 @@
 import pytube
 from tqdm import tqdm
 import time
+from colorama import Fore, Back, Style
 
 total_length = 100
 
 progress_bar = tqdm(total = total_length, unit = 'iteration')
 
 
-link = str(input("[=>] Paste Your Link Here: "))
+link = str(input(Fore.GREEN + "[=>] Paste Your Link Here: "))
+print('\n')
 
 my_video = pytube.YouTube(link)
-print(my_video.title)
-print(my_video.thumbnail_url)
-print("THE DOWNLOAD HAS STARTED...")
+print(Fore.BLUE+f"[+]	VIDEO TITLE: {my_video.title}")
+print(Fore.BLUE+f"[+]	THUMBNAIL: {my_video.thumbnail_url} \n")
+print(Style.BRIGHT + "[+] THE DOWNLOAD HAS STARTED... \n\n")
 
 for i in range(total_length):
 	stream = my_video.streams.get_highest_resolution()
@@ -22,4 +24,4 @@ for i in range(total_length):
 	
 progress_bar.close()
 
-print("DOWNLOAD COMPLETE!!!")
+print("\n [<+>]	DOWNLOAD COMPLETE!!!")
